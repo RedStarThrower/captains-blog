@@ -127,3 +127,143 @@ body {
 /**
  * App code
  */
+ $blue: #2c6287;
+
+ .container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid;
+
+}
+
+//SplashPage
+
+.splash {
+
+    .loginContainer {
+    // border: 1px solid red;
+    text-align: center;
+
+        .error {
+            color: red;
+        }
+
+        input {
+            display: block;
+            margin: 10px;
+            margin-left: 10%;
+        }
+
+        button {
+            background: $blue;
+            color: white;
+            padding: 5px;
+            margin: 10px;
+        }
+    }
+
+}    
+
+//Header
+
+h1 {
+    color: $blue;
+}
+
+p {
+    text-align: center;
+}
+
+//Dashboard
+
+.dashboard {
+    text-align: center;
+
+    .navBar {
+        margin: 40px 0;
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            margin: 50px;
+            color: white;
+            background: $blue;
+        }
+    }
+}
+
+//New Post
+
+.newPostPage {
+   text-align: center;
+
+    .navBar {
+        margin: 40px 0;
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            margin: 50px;
+            color: white;
+            background: $blue;
+            border: 1px solid grey;
+        }
+    } 
+
+    .newPost {
+
+        input {
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            outline: none;
+            border:1px solid grey;
+        }
+
+        textarea {
+            display: block;
+            width:90%;
+            padding: 10px;
+            margin-top: 10px;
+            border:1px solid grey;
+            margin-bottom: 20px;
+            outline: none;
+            margin-left: 5%;
+        }
+
+        button {
+            background: $blue;
+            color: white;
+            padding: 5px;
+            margin: 10px;
+        }
+
+
+    }
+}
+
+//My Posts
+
+.myPosts {
+   text-align: center;
+
+    .navBar {
+        margin: 40px 0;
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            margin: 50px;
+            color: white;
+            background: $blue;
+        }
+    } 
+}
+
+
+
+
+
+
+
