@@ -46,22 +46,14 @@ import MyPosts from './myPosts.js'
 function app() {
     // start app
     // new Router()
-    var PostModel = Backbone.Model.extend({
-		defaults: {
-			postTitle: null,
-			postContent: null
-		}
-	})
-
+    
     var PostsByUser = Backbone.Firebase.Collection.extend({
    		url: "",
 
 		initialize: function(uid) {
 			this.url = `https://captains-blog.firebaseio.com/users/${uid}/posts`
 		},
-
-		model: PostModel
-	})	
+  	})	
 
      var BlogRouter = Backbone.Router.extend({
     	routes: {
@@ -102,7 +94,7 @@ function app() {
     	},
 
     	showMyPostsPage: function() {
-    		DOM.render(<MyPosts/>, document.querySelector('.container'))
+    		DOM.render(<MyPosts />, document.querySelector('.container'))
     	},
 
     	handleLogOut: function() {

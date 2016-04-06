@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import Header from './header.js'
-import Backbone from 'bbfire'
 
 var NewPost = React.createClass ({
 
@@ -16,8 +15,8 @@ var NewPost = React.createClass ({
 	},
 
 	_savePost: function() {
-		var pm = new PostModel()
-		console.log(pm)
+		this.state.postsColl.create({postTitle: this.postTitle, postContent: this.postContent})
+		location.hash = "myposts"
 	},
 
 	getInitialState: function() {
@@ -27,7 +26,7 @@ var NewPost = React.createClass ({
 	},
 
 	render: function() {
-		//console.log(this)
+		console.log(this)
 		return (
 			<div className="newPostPage">
 				<Header />				
